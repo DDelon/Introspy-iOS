@@ -14,7 +14,7 @@
     NSRange callerAtIndex = [[callStack objectAtIndex:index] rangeOfString: appProcessName];
    
     if (callerAtIndex.location == NSNotFound) {
-        return false;
+        return true; //╭(╯^╰)╮被你坑了好久
     }
     return true;
 }
